@@ -1,0 +1,376 @@
+:root {
+    
+    --dark: #1d252d;
+    --mid: #8c8c8c;
+    --light: #eeeeee;
+    --gold: #f1c400;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: proxima-nova, sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#navbar {
+    padding-top: 8px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 56px;
+    z-index: 1;
+}
+
+#logo {
+    margin-top: 4px;
+    margin-left: 30px;
+    height: 40px;
+    float: left;
+}
+
+ul {
+    margin: 0;
+    padding-top: 12px;
+    float: right;
+    margin-right: 30px;
+}
+
+li {
+    display: inline;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.navlist {
+    color: var(--dark);
+}
+
+.navlist:hover {
+    color: var(--mid);
+}
+
+#welcome-section {
+    clear: both;
+    min-height: 55vh;
+    padding-top: 45vh;
+    background-color: var(--dark);
+    color: white;
+    padding-left: 30px;
+    margin-bottom: 40px;
+    background-image: url(https://images.squarespace-cdn.com/content/5b15fa01f407b4d0fd07a75b/1558813064731-ACV1UTQRE2ZX8FO1H5BZ/georgie-cobbs-467923-unsplash_r.jpg?format=2500w&content-type=image%2Fjpeg);
+    background-size: cover;
+    background-position: left;
+}
+
+#name {
+    clear: both;
+    margin-top: -6vh;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: var(--dark);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 170px;
+    margin-left: -50px;
+    padding-left: 50px;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0;
+    margin-top: 10px;
+    background-color: var(--dark);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 540px;
+    margin-left: -50px;
+    padding-left: 50px;
+}
+
+h1.design { 
+    width: 380px;
+}
+
+@media only screen and (max-width: 815px) {
+  h1 {
+    font-size: 60px;
+    background-color: var(--dark);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 400px;
+    margin-left: -50px;
+    padding-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 815px) {
+  h1.design {
+      font-size: 60px;
+        width: 290px;
+    }
+}
+
+#recent {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+hr {
+    border-color: var(--dark);
+    color: var(--dark);
+    text-align: center;
+    width: 60px;
+    margin-bottom: 40px;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 815px) {
+  #projects {
+      flex-direction: column;
+    }
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 25%;
+    background-color: var(--dark);
+    height: 200px;
+    margin-bottom: 40px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box1:hover {
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05)
+}
+
+.box1:hover::after {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 815px) {
+  .box1 {
+      width: 86%;
+      height: 260px;
+    }
+}
+
+.image-box1 {
+    height: 100%;
+    color: var(--dark);
+    background-image: url(https://images.squarespace-cdn.com/content/5b15fa01f407b4d0fd07a75b/1558836783949-J68UR7KDT8IQSNYWB6M6/Tribute.png?format=2500w&content-type=image%2Fpng);
+    background-position: center;
+    background-size: cover;
+}
+
+.project-tile {
+    height: 2%;
+    text-align: center;
+    font-size: 13px;
+    background-color: var(--dark);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: 4%;
+    margin-right: 4%;
+    background-color: var(--dark);
+    color: white;
+    margin-bottom: 40px;
+    height: 200px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box2:hover {
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05)
+}
+
+.box2:hover::after {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 815px) {
+  .box2 {
+      width: 86%;
+      height: 260px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+}
+
+.image-box2 {
+    height: 100%;
+    color: var(--dark);
+    background-image: url(https://images.squarespace-cdn.com/content/5b15fa01f407b4d0fd07a75b/1558836778045-78O2ADCKZV9RZJJIAT4H/Survey.png?format=2500w&content-type=image%2Fpng);
+    background-position: center;
+    background-size: cover;
+}
+
+.box3 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: var(--dark);
+    color: white;
+    margin-bottom: 40px;  
+    height: 200px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box3:hover {
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05)
+}
+
+.box3:hover::after {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 815px) {
+  .box3 {
+      width: 86%;
+      height: 260px;
+    }
+}
+
+.image-box3 {
+    height: 100%;
+    color: var(--dark);
+    background-image: url(https://images.squarespace-cdn.com/content/5b15fa01f407b4d0fd07a75b/1558836780096-FDXXY0SNPK2ERKN4GAGI/Product.png?format=2500w&content-type=image%2Fpng);
+    background-position: center;
+    background-size: cover;
+}
+
+.image-box4 {
+    height: 100%;
+    color: var(--dark);
+    background-image: url(https://images.squarespace-cdn.com/content/5b15fa01f407b4d0fd07a75b/1558836777032-73OIW8WNP9TDV8I7JR2X/Documentation.png?format=2500w&content-type=image%2Fpng);
+    background-position: center;
+    background-size: cover;
+}
+
+.image-box5 {
+    height: 100%;
+    color: var(--dark);
+    background-image: url(https://cdn.dribbble.com/users/2034846/screenshots/6421606/dribble_logo_1600x1200_osf_4x.png);
+    background-position: center;
+    background-size: cover; 
+}
+
+.image-box6 {
+    height: 100%;
+    color: var(--dark);
+    background-image: url(https://cdn.dribbble.com/users/2034846/screenshots/6333267/dribble_logo_1600x1200_panther_4x.jpg);
+    background-position: center;
+    background-size: cover; 
+}
+
+#codepen {
+    padding-top: 40px;
+    width: 100%;
+    color: white;
+    background-color: var(--dark);
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+i,fas,fa-code {
+    margin-bottom: 30px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 36px;
+}
+
+.outlined {
+    text-align: center;
+    border-color: var(--gold);
+    height: 40px;
+    color: white;
+    background-color: var(--dark);
+    width: 140px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-width: 2px;
+}
+
+.outlined:hover {
+    background-color: var(--gold);
+    color: var(--dark);
+}
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--mid);
+    font-weight: 500;
+}
+
+.title {
+    color: white;
+}
+
+a.title:hover {
+    color: white;
+}
+
+
+#contact {
+    color: var(--dark);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.getintouch {
+    font-size: 16px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.email {
+    color: var(--dark);
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+
+footer {
+    position: sticky;
+    text-align: center;
+    background-color: var(--dark);
+    color: white;
+    height: 40px;
+    padding-top: 20px;
+    margin: 0 auto;
+    font-size: 14px;
+}
